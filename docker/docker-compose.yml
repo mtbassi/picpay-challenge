@@ -1,0 +1,18 @@
+services:
+  mysql:
+    image: mysql:latest
+    restart: always
+    ports:
+      - "3312:3306"
+    expose:
+      - "3312"
+    environment:
+      - MYSQL_USER=admin
+      - MYSQL_PASSWORD=admin
+      - MYSQL_DATABASE=picpaydb
+      - MYSQL_ROOT_PASSWORD=admin
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
