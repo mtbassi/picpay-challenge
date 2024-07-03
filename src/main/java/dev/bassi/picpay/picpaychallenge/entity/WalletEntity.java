@@ -38,4 +38,11 @@ public class WalletEntity {
     @JoinColumn(name = "wallet_type_id")
     private WalletTypeEntity walletTypeEntity;
 
+    public void debit(BigDecimal value) {
+        this.balance = this.balance.subtract(value);
+    }
+
+    public void credit(BigDecimal value) {
+        this.balance = this.balance.add(value);
+    }
 }

@@ -1,4 +1,4 @@
 package dev.bassi.picpay.picpaychallenge.client.dto;
 
-public record AuthorizationResponse(Boolean isAuthorized) {
+public record AuthorizationResponse(boolean isAuthorized) {
 }

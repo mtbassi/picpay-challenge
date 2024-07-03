@@ -22,7 +22,7 @@ public class WalletController {
 
     @PostMapping("/wallet")
     public ResponseEntity<WalletEntity> create(@RequestBody @Valid CreateWalletDto data, UriComponentsBuilder uriBuilder) {
-        var response = this.service.create(WalletMapper.MAPPER.mapToWalletEntity(data));
+        var response = this.service.save(WalletMapper.MAPPER.mapToWalletEntity(data));
         var uri = uriBuilder.path("/wallet/{id}")
                 .buildAndExpand(response.getId())
                 .toUri();

@@ -1,4 +1,4 @@
-package dev.bassi.picpay.picpaychallenge.validation;
+package dev.bassi.picpay.picpaychallenge.validation.pattern;
 
 import lombok.experimental.UtilityClass;
 

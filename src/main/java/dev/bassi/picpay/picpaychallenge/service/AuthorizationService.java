@@ -13,7 +13,7 @@ public class AuthorizationService {
 
     private final AuthorizationClient authorizationClient;
 
-    public Boolean isAuthorized(){
+    public boolean isAuthorized(){
         var response = this.authorizationClient.isAuthorized();
         if (response.getStatusCode().isError()){
             throw new PicPayException();

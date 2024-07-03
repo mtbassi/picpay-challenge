@@ -1,7 +1,7 @@
 package dev.bassi.picpay.picpaychallenge.controller.dto;
 
 import dev.bassi.picpay.picpaychallenge.entity.WalletTypeEntity;
-import dev.bassi.picpay.picpaychallenge.validation.DocumentRegexPattern;
+import dev.bassi.picpay.picpaychallenge.validation.pattern.DocumentRegexPattern;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
