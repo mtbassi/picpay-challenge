@@ -1,7 +1,7 @@
 package dev.bassi.picpay.picpaychallenge.repository;
 
-import dev.bassi.picpay.picpaychallenge.entity.WalletType;
+import dev.bassi.picpay.picpaychallenge.entity.WalletTypeEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface WalletTypeRepository extends JpaRepository<WalletType, Long> {
+public interface WalletTypeRepository extends JpaRepository<WalletTypeEntity, Long> {
 }

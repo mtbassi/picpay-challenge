@@ -1,6 +1,6 @@
 package dev.bassi.picpay.picpaychallenge.infra.dataloader;
 
-import dev.bassi.picpay.picpaychallenge.entity.WalletType;
+import dev.bassi.picpay.picpaychallenge.entity.WalletTypeEntity;
 import dev.bassi.picpay.picpaychallenge.repository.WalletTypeRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
@@ -16,7 +16,7 @@ public class DataLoaderConfiguration implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Arrays.stream(WalletType.Enum.values()).forEach(walletType -> walletTypeRepository.save(walletType.get()));
+        Arrays.stream(WalletTypeEntity.Enum.values()).forEach(walletType -> this.walletTypeRepository.save(walletType.get()));
     }
 
 }
