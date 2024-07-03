@@ -32,7 +32,7 @@ public class WalletEntity {
     private String password;
 
     @Column(columnDefinition = "decimal(10,2) default 0.00")
-    private BigDecimal balance;
+    private BigDecimal balance = BigDecimal.ZERO;
 
     @ManyToOne
     @JoinColumn(name = "wallet_type_id")
