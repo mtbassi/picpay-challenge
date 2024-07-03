@@ -14,7 +14,7 @@ import java.math.BigDecimal;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Wallet {
+public class WalletEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -36,6 +36,6 @@ public class Wallet {
 
     @ManyToOne
     @JoinColumn(name = "wallet_type_id")
-    private WalletType walletType;
+    private WalletTypeEntity walletTypeEntity;
 
 }

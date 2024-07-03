@@ -12,7 +12,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class WalletType {
+public class WalletTypeEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -30,8 +30,8 @@ public class WalletType {
 
         private final String description;
 
-        public WalletType get() {
-            return new WalletType(id, description);
+        public WalletTypeEntity get() {
+            return new WalletTypeEntity(id, description);
         }
     }
 
