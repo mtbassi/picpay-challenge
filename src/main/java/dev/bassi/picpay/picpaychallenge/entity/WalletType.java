@@ -20,4 +20,19 @@ public class WalletType {
 
     private String description;
 
+    @AllArgsConstructor
+    public enum Enum {
+
+        USER(1L, "user"),
+        MERCHANT(2L, "merchant");
+
+        private final Long id;
+
+        private final String description;
+
+        public WalletType get() {
+            return new WalletType(id, description);
+        }
+    }
+
 }
